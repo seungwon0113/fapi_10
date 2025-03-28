@@ -3,7 +3,7 @@
 from typing import Annotated
 
 from fastapi import FastAPI
-from routers import users
+from app.routers import users
 from app.models.users import UserModel
 
 app = FastAPI()
