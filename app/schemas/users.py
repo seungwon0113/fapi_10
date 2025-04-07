@@ -15,3 +15,10 @@ class UserUpdate(BaseModel):
     username : str
     age : int
     gender : Gender
+
+class UserParms(BaseModel):
+    model_config = {"extra": "forbid"}
+
+    username : str
+    age : int
+    gender : Gender

@@ -1,0 +1,6 @@
+services:
+  web:
+    container_name: fastapi
+    build: .
+    ports:
+      - 8080:8080
