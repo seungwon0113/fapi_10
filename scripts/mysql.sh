@@ -9,7 +9,7 @@ echo "==== Install MySQL ===="
 echo
 
 # MySQL RPM 다운로드 및 설치
-sudo apt-get install mysql-sever
+sudo apt-get install mysql-server
 
 # MySQL 버전 출력
 mysql_version=$(mysql -V)
