@@ -18,7 +18,7 @@ echo -e "MySQL version is: $mysql_version"
 echo
 
 # MySQL 실행
-sudo systemctl start mysqld
+sudo systemctl start mysql
 
 # MySQL 초기 비밀번호 확인 및 저장
 sudo grep "temporary password" /var/log/mysqld.log | awk '{print $NF}' > mysql_password.txt
