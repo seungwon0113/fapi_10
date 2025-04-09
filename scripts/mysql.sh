@@ -10,9 +10,9 @@ echo
 
 # MySQL RPM 다운로드 및 설치
 sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-4.noarch.rpm
-sudo dnf install mysql80-community-release-el9-4.noarch.rpm -y
-sudo dnf install mysql-community-client -y
-sudo dnf install mysql-community-server -y
+sudo apt install mysql80-community-release-el9-4.noarch.rpm -y
+sudo apt install mysql-community-client -y
+sudo apt install mysql-community-server -y
 
 # MySQL 버전 출력
 mysql_version=$(mysql -V)
