@@ -9,10 +9,9 @@ echo "==== Install MySQL ===="
 echo
 
 # MySQL RPM 다운로드 및 설치
-sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-4.noarch.rpm
-sudo dnf install mysql80-community-release-el9-4.noarch.rpm -y
-sudo dnf install mysql-community-client -y --skip-broken
-sudo dnf install mysql-community-server -y --skip-broken
+sudo apt install mysql-client-core-8.0
+sudo apt install mysql-community-client -y
+sudo apt install mysql-community-server -y
 
 # MySQL 버전 출력
 mysql_version=$(mysql -V)
