@@ -10,3 +10,12 @@ class ResponseMovie(BaseModel):
     title : str
     playtime : int
     genre : list[str]
+
+class MovieParams(BaseModel):
+    title : str
+    genre : str
+
+class MovieUpdate(BaseModel):
+    title : str
+    playtime : int
+    genre : list[str]
