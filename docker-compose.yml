@@ -2,5 +2,7 @@ services:
   web:
     container_name: fastapi
     build: .
+    volumes:
+      - .:/app
     ports:
       - 8888:8080

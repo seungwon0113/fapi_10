@@ -1,6 +1,12 @@
 from pydantic import BaseModel
 
-class Movie(BaseModel):
+class CreateMovie(BaseModel):
     title : str
     playtime : int
-    gemre : 
+    genre : list[str]
+
+class ResponseMovie(BaseModel):
+    id : int
+    title : str
+    playtime : int
+    genre : list[str]
